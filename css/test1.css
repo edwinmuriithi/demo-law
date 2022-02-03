@@ -7183,6 +7183,7 @@ textarea.form-control {
 #section-counter .container-fluid {
     overflow: hidden;
     padding: 0 !important;
+    ;
 }
 
 @media (max-width: 1199.98px) {
