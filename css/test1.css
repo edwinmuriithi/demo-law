@@ -7831,6 +7831,15 @@ textarea.form-control {
 }
 
 
+/*Profile */
+
+#profile {
+    margin: auto;
+    width: 130%;
+    padding: 60px;
+}
+
+
 /*Fontawesome icons*/
 
 .nav.sidebar-nav li a::before {
