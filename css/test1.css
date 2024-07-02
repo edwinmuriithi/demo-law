@@ -7113,6 +7113,93 @@ textarea.form-control {
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.1);
 }
+.section-title {
+    text-align: center;
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #ffffff; /* Optional: Change color as desired */
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+}
+
+.section-title-projects {
+    text-align: center;
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #000000; /* Optional: Change color as desired */
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+}
+.section-title-partners {
+    text-align: center;
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #000000; /* Optional: Change color as desired */
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+}
+
+.image-container {
+    width: 100%;
+    height: 150px; /* Fixed height for uniformity */
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.card h3 {
+    margin-top: 20px;
+}
+.card h5 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+.partners-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.partner-column {
+    flex: 0 1 20%; /* Adjust this value based on the number of logos and desired layout */
+    max-width: 150px;
+    margin: 10px;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 
 .testimony-section .owl-dots .owl-dot.active,
 .testimony-section .owl-dots .owl-dot:focus {
