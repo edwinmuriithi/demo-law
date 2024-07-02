@@ -7121,6 +7121,13 @@ textarea.form-control {
     margin-bottom: 20px; /* Optional: Adjust spacing */
 }
 
+@media (max-width: 576px) {
+    .section-title {
+        color: #000000; /* Change to a visible color on mobile */
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+}
+
 .section-title-projects {
     text-align: center;
     font-size: 2.5rem; /* Adjust font size as needed */
@@ -7144,6 +7151,12 @@ textarea.form-control {
 .column {
     flex: 1;
     padding: 10px;
+}
+@media (max-width: 768px) {
+    .column {
+        flex: 0 0 100%; /* Make each column take full width */
+        max-width: 100%;
+    }
 }
 
 .card {
@@ -7200,6 +7213,46 @@ textarea.form-control {
     object-fit: contain;
 }
 
+@media (max-width: 1200px) {
+    .partner-column {
+        flex: 0 1 25%;
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 992px) {
+    .partner-column {
+        flex: 0 1 33%;
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-column {
+        flex: 0 1 50%;
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .partner-column {
+        flex: 0 1 100%;
+        max-width: 60px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .section-title-projects,
+    .section-title-partners {
+        font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .column {
+        padding: 5px;
+    }
+}
 
 .testimony-section .owl-dots .owl-dot.active,
 .testimony-section .owl-dots .owl-dot:focus {
