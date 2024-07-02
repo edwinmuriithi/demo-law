@@ -7113,11 +7113,21 @@ textarea.form-control {
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.1);
 }
+
+
+
+.section-landing {
+    text-align: center;
+    font-size: 2.0rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #ffffff; /* Optional: Change color as desired */
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+}
 .section-title {
     text-align: center;
     font-size: 2.5rem; /* Adjust font size as needed */
     font-weight: bold;
-    color: #ffffff; /* Optional: Change color as desired */
+    color: #000000; /* Optional: Change color as desired */
     margin-bottom: 20px; /* Optional: Adjust spacing */
 }
 
@@ -7127,6 +7137,23 @@ textarea.form-control {
         font-size: 1.8rem; /* Adjust font size for smaller screens */
     }
 }
+.main-paragraph {
+    font-size: 20px;
+    font-style: italic;
+    color: #000000; /* Bootstrap's text-muted color */
+    margin-bottom: 1.5rem; /* Bootstrap's mb-4 value */
+}
+
+/* Style for the highlighted quote paragraph */
+.quote-paragraph {
+    font-size: 45px;
+    font-style: italic;
+    color: #000000; /* Bootstrap's text-muted color */
+    margin-bottom: 1.5rem; /* Bootstrap's mb-4 value */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+}
+
 
 .section-title-projects {
     text-align: center;
