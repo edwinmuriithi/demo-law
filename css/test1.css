@@ -7143,6 +7143,14 @@ textarea.form-control {
     margin-bottom: 20px; /* Optional: Adjust spacing */
 }
 
+.section-title-get-involved {
+    text-align: center;
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #000000; /* Optional: Change color as desired */
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -7188,6 +7196,7 @@ textarea.form-control {
 .card h5 {
     margin-top: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
 .card p {
@@ -7245,6 +7254,7 @@ textarea.form-control {
     }
 
     .section-title-projects,
+    .section-title-get-involved,
     .section-title-partners {
         font-size: 1.8rem; /* Adjust font size for smaller screens */
     }
