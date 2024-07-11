@@ -1,204 +1,32 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <style>
-        .gm-control-active>img {
-            box-sizing: content-box;
-            display: none;
-            left: 50%;
-            pointer-events: none;
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%)
-        }
-        
-        .gm-control-active>img:nth-child(1) {
-            display: block
-        }
-        
-        .gm-control-active:hover>img:nth-child(1),
-        .gm-control-active:active>img:nth-child(1),
-        .gm-control-active:disabled>img:nth-child(1) {
-            display: none
-        }
-        
-        .gm-control-active:hover>img:nth-child(2),
-        .gm-control-active:active>img:nth-child(3),
-        .gm-control-active:disabled>img:nth-child(4) {
-            display: block
-        }
-    </style>
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans_old:400,500,700|Google+Sans+Text:400">
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans+Text:400&amp;text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93">
-    <style>
-        .gm-ui-hover-effect {
-            opacity: .6
-        }
-        
-        .gm-ui-hover-effect:hover {
-            opacity: 1
-        }
-    </style>
-    <style>
-        .gm-style .gm-style-cc a,
-        .gm-style .gm-style-cc button,
-        .gm-style .gm-style-cc span,
-        .gm-style .gm-style-mtc div {
-            font-size: 10px;
-            box-sizing: border-box
-        }
-        
-        .gm-style .gm-style-cc a,
-        .gm-style .gm-style-cc button,
-        .gm-style .gm-style-cc span {
-            outline-offset: 3px
-        }
-    </style>
-    <style>
-        @media print {
-            .gm-style .gmnoprint,
-            .gmnoprint {
-                display: none
-            }
-        }
-        
-        @media screen {
-            .gm-style .gmnoscreen,
-            .gmnoscreen {
-                display: none
-            }
-        }
-    </style>
-    <style>
-        .dismissButton {
-            background-color: #fff;
-            border: 1px solid #dadce0;
-            color: #1a73e8;
-            border-radius: 4px;
-            font-family: Roboto, sans-serif;
-            font-size: 14px;
-            height: 36px;
-            cursor: pointer;
-            padding: 0 24px
-        }
-        
-        .dismissButton:hover {
-            background-color: rgba(66, 133, 244, 0.04);
-            border: 1px solid #d2e3fc
-        }
-        
-        .dismissButton:focus {
-            background-color: rgba(66, 133, 244, 0.12);
-            border: 1px solid #d2e3fc;
-            outline: 0
-        }
-        
-        .dismissButton:focus:not(:focus-visible) {
-            background-color: #fff;
-            border: 1px solid #dadce0;
-            outline: none
-        }
-        
-        .dismissButton:focus-visible {
-            background-color: rgba(66, 133, 244, 0.12);
-            border: 1px solid #d2e3fc;
-            outline: 0
-        }
-        
-        .dismissButton:hover:focus {
-            background-color: rgba(66, 133, 244, 0.16);
-            border: 1px solid #d2e2fd
-        }
-        
-        .dismissButton:hover:focus:not(:focus-visible) {
-            background-color: rgba(66, 133, 244, 0.04);
-            border: 1px solid #d2e3fc
-        }
-        
-        .dismissButton:hover:focus-visible {
-            background-color: rgba(66, 133, 244, 0.16);
-            border: 1px solid #d2e2fd
-        }
-        
-        .dismissButton:active {
-            background-color: rgba(66, 133, 244, 0.16);
-            border: 1px solid #d2e2fd;
-            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15)
-        }
-        
-        .dismissButton:disabled {
-            background-color: #fff;
-            border: 1px solid #f1f3f4;
-            color: #3c4043
-        }
-    </style>
-    <style>
-        .gm-style-moc {
-            background-color: rgba(0, 0, 0, 0.45);
-            pointer-events: none;
-            text-align: center;
-            transition: opacity ease-in-out
-        }
-        
-        .gm-style-mot {
-            color: white;
-            font-family: Roboto, Arial, sans-serif;
-            font-size: 22px;
-            margin: 0;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%)
-        }
-    </style>
-    <style>
-        .gm-style img {
-            max-width: none;
-        }
-        
-        .gm-style {
-            font: 400 11px Roboto, Arial, sans-serif;
-            text-decoration: none;
-        }
-    </style>
     <title>Lawyers for Animal Protection in Africa</title>
     <link rel="shortcut icon" href="images/lapa.png" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/test1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css+animate.css+owl.carousel.min.css+owl.theme.default.min.css+magnific-popup.css+aos.css+ionicons.min.css+bootstrap-datepicker.css+jquery.timepicker.css+flaticon.css+icomoon.css+style.css.pagespeed.cc.hfzlshqC8B.css">
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script defer="" src="/cdn-cgi/zaraz/s.js?executed=&amp;c=_ga%3DGA1.2.158153135.1642056839%3B+_gid%3DGA1.2.186616983.1642056839&amp;t=Whisper+-+Free+Bootstrap+4+Template+by+Colorlib&amp;w=1920&amp;h=1080&amp;j=968&amp;e=1848&amp;l=https%3A%2F%2Fpreview.colorlib.com%2Ftheme%2Fwhisper%2Fcontact.html&amp;r=https%3A%2F%2Fpreview.colorlib.com%2Ftheme%2Fwhisper%2Fabout.html&amp;k=24&amp;n=UTF-8&amp;o=-180"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/common.js"></script>
+    <link rel="stylesheet" href="css/popup.css"> <!-- Include the new CSS file -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/map.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/stats.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/onion.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d33.46460939019454&amp;2d-83.183457627055&amp;2m2&amp;1d48.28465069156641&amp;2d-65.01695538666368&amp;2u7&amp;4sen-US&amp;5e0&amp;6sm%40587000000&amp;7b0&amp;8e0&amp;12e1&amp;13shttps%3A%2F%2Fpreview.colorlib.com%2Ftheme%2Fwhisper%2Fcontact.html&amp;14b1&amp;callback=_xdc_._gdbys5&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=67433"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Fpreview.colorlib.com%2Ftheme%2Fwhisper%2Fcontact.html&amp;4sAIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;7m1&amp;1e69&amp;callback=_xdc_._z1ilrj&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=18851"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i7!2i36!3i47!1m4!1m3!1i7!2i37!3i47!1m4!1m3!1i7!2i38!3i47!1m4!1m3!1i7!2i36!3i48!1m4!1m3!1i7!2i36!3i49!1m4!1m3!1i7!2i37!3i48!1m4!1m3!1i7!2i37!3i49!1m4!1m3!1i7!2i38!3i48!1m4!1m3!1i7!2i38!3i49!2m3!1e0!2sm!3i587315423!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmd8cC5jOiNmZmY1ZjVmNSxzLmU6bC5pfHAudjpvZmYscy5lOmwudC5mfHAuYzojZmY2MTYxNjEscy5lOmwudC5zfHAuYzojZmZmNWY1ZjUscy50OjIxfHMuZTpsLnQuZnxwLmM6I2ZmYmRiZGJkLHMudDoyfHMuZTpnfHAuYzojZmZlZWVlZWUscy50OjJ8cy5lOmwudC5mfHAuYzojZmY3NTc1NzUscy50OjQwfHMuZTpnfHAuYzojZmZlNWU1ZTUscy50OjQwfHMuZTpsLnQuZnxwLmM6I2ZmOWU5ZTllLHMudDozfHMuZTpnfHAuYzojZmZmZmZmZmYscy50OjUwfHMuZTpsLnQuZnxwLmM6I2ZmNzU3NTc1LHMudDo0OXxzLmU6Z3xwLmM6I2ZmZGFkYWRhLHMudDo0OXxzLmU6bC50LmZ8cC5jOiNmZjYxNjE2MSxzLnQ6NTF8cy5lOmwudC5mfHAuYzojZmY5ZTllOWUscy50OjY1fHMuZTpnfHAuYzojZmZlNWU1ZTUscy50OjY2fHMuZTpnfHAuYzojZmZlZWVlZWUscy50OjZ8cy5lOmd8cC5jOiNmZmM5YzljOSxzLnQ6NnxzLmU6bC50LmZ8cC5jOiNmZjllOWU5ZQ!4e3!12m1!5b1&amp;callback=_xdc_._9um27f&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=28957"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent?1shttps%3A%2F%2Fpreview.colorlib.com%2Ftheme%2Fwhisper%2Fcontact.html&amp;3sAIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;7scnoltz&amp;10e1&amp;callback=_xdc_._36fv4j&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=30877"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/controls.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i7!2i36!3i47!1m4!1m3!1i7!2i37!3i47!1m4!1m3!1i7!2i38!3i47!1m4!1m3!1i7!2i36!3i48!1m4!1m3!1i7!2i36!3i49!1m4!1m3!1i7!2i37!3i48!1m4!1m3!1i7!2i37!3i49!1m4!1m3!1i7!2i38!3i48!1m4!1m3!1i7!2i38!3i49!2m3!1e0!2sm!3i587315423!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e3!12m1!5b1&amp;callback=_xdc_._n3g72d&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=18423"></script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script defer src="js/main.js"></script>
 </head>
-
-<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img href="index.html" src="images/logo.png" alt="LAPA logo" id="lapa-logo" width="150px" height="92px"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="LAPA logo" id="lapa-logo" width="150" height="92"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-<span class="fas fa-bars"></span> Menu
-</button>
+                <span class="fas fa-bars"></span> Menu
+            </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <!-- <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="aboutus.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             About Us
@@ -209,10 +37,8 @@
                             <li><a class="dropdown-item" href="work-with-us.html">Work with Us</a></li>
                         </ul>
                     </li>
-
-                    <!-- <li class="nav-item"><a href="ourwork.html" class="nav-link">Our Work</a></li> -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="aboutus.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="ourwork.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Our Work
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -222,7 +48,6 @@
                             <li><a class="dropdown-item" href="consultancy.html">Legal Aid</a></li>
                         </ul>
                     </li>
-                    <!-- <li class="nav-item"><a href="who-we-are.html" class="nav-link">Our Team</a></li> -->
                     <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -240,40 +65,40 @@
             </div>
         </div>
     </section>
+
     <section class="ftco-section contact-section">
         <div class="container">
             <div class="row d-flex mb-5 contact-info">
                 <div class="col-md-12 mb-4">
                     <h2 class="h3">Contact Information</h2>
                 </div>
-                <div class="w-100"></div>
                 <div class="col-md-3">
                     <p><span>Address:</span> Nairobi, Kenya</p>
                 </div>
                 <div class="col-md-3">
-                    <p><span>Phone:</span> <a href="tel://+254716152699">+254716152699</a></p>
+                    <p><span>Phone:</span> <a href="tel:+254716152699">+254716152699</a></p>
                 </div>
                 <div class="col-md-3">
-                    <p><span>Email:</span> <a href="info@lapa.africa">info@lapa.africa</a></p>
+                    <p><span>Email:</span> <a href="mailto:info@lapa.africa">info@lapa.africa</a></p>
                 </div>
                 <div class="col-md-3">
-                    <p><span>Website</span> <a href="https://lapa.africa/">lapa.africa</a></p>
+                    <p><span>Website:</span> <a href="https://lapa.africa/">lapa.africa</a></p>
                 </div>
             </div>
             <div class="row block-9">
                 <div class="col-lg-6 order-md-last d-flex">
-                    <form action="#" class="bg-light p-5 contact-form">
+                    <form id="contactForm" action="send_email.php" method="post" class="bg-light p-5 contact-form">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -281,186 +106,20 @@
                     </form>
                 </div>
                 <div class="col-lg-6 d-flex">
-                    <div id="map" class="bg-white" style="position: relative; overflow: hidden;">
-                        <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
-                            <div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;" class="gm-style">
-                                <div><button style="background: transparent none repeat scroll 0% 0%; display: block; border: medium none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; z-index: 1000002; left: -100000px; top: -100000px;"
-                                        draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button"></button></div>
-                                <div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"
-                                    tabindex="0" aria-label="Map" aria-roledescription="map" role="group">
-                                    <div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px);">
-                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
-                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
-                                                <div style="position: absolute; z-index: 993; transform: matrix(1, 0, 0, 1, -181, -34);">
-                                                    <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                    <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                    <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                    <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                    <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                    <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                    <div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                    <div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                    <div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
-                                                        <div style="width: 256px; height: 256px;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
-                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
-                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div>
-                                        <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
-                                            <div style="position: absolute; z-index: 993; transform: matrix(1, 0, 0, 1, -181, -34);">
-                                                <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i37!3i48!4i256!2m3!1e0!2sm!3i587315410!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=30348"></div>
-                                                <div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i38!3i47!4i256!2m3!1e0!2sm!3i587315398!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=124165"></div>
-                                                <div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i36!3i47!4i256!2m3!1e0!2sm!3i587315398!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=61980"></div>
-                                                <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i36!3i48!4i256!2m3!1e0!2sm!3i587315410!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=64791"></div>
-                                                <div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i37!3i47!4i256!2m3!1e0!2sm!3i587315398!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=27537"></div>
-                                                <div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i37!3i49!4i256!2m3!1e0!2sm!3i587315410!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=120"></div>
-                                                <div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i38!3i49!4i256!2m3!1e0!2sm!3i587315398!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=63709"></div>
-                                                <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i38!3i48!4i256!2m3!1e0!2sm!3i587315398!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=93937"></div>
-                                                <div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;" draggable="false" alt="" role="presentation" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i7!2i36!3i49!4i256!2m3!1e0!2sm!3i587315423!2m3!1e2!6m1!3e5!3m17!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0&amp;key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;token=126437"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
-                                        <div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px);">
-                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
-                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
-                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div>
-                                            <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
-                                        </div>
-                                    </div>
-                                    <div style="z-index: 4; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;" class="gm-style-moc">
-                                        <p class="gm-style-mot"></p>
-                                    </div>
-                                </div>
-                                <div class="mapouter">
-                                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bruce%20house&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                        <a href="https://putlocker-is.org"></a><br>
-                                        <style>
-                                            .mapouter {
-                                                position: relative;
-                                                text-align: right;
-                                                height: 500px;
-                                                width: 600px;
-                                            }
-                                        </style><a href="https://www.embedgooglemap.net">embedded google maps in website</a>
-                                        <style>
-                                            .gmap_canvas {
-                                                overflow: hidden;
-                                                background: none!important;
-                                                height: 500px;
-                                                width: 600px;
-                                            }
-                                        </style>
-                                    </div>
-                                </div>
-                                <div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div><button style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; margin: 10px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"
-                                        draggable="false" aria-label="Toggle fullscreen view" title="Toggle fullscreen view" type="button" class="gm-control-active gm-fullscreen-control"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt=""><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt=""><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%200v6h2V2h4V0H0zm16%200h-4v2h4v4h2V0h-2zm0%2016h-4v2h6v-6h-2v4zM2%2012H0v6h6v-2H2v-4z%22/%3E%3C/svg%3E" alt=""></button></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div>
-                                    <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" style="margin: 10px; user-select: none; position: absolute; bottom: 127px; right: 40px;" draggable="false" data-control-width="40" data-control-height="113">
-                                        <div class="gmnoprint" data-control-width="40" data-control-height="40" style="display: none; position: absolute;">
-                                            <div style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 40px; height: 40px;"><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: none; border: 0px none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px;"
-                                                    draggable="false" aria-label="Rotate map clockwise" title="Rotate map clockwise" type="button" class="gm-control-active"><img style="width: 20px; height: 20px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"><img style="width: 20px; height: 20px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"><img style="width: 20px; height: 20px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"></button>
-                                                <div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;"></div><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: none; border: 0px none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; left: 0px; top: 0px; overflow: hidden; width: 40px; height: 40px; transform: scaleX(-1);"
-                                                    draggable="false" aria-label="Rotate map counterclockwise" title="Rotate map counterclockwise" type="button" class="gm-control-active"><img style="width: 20px; height: 20px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"><img style="width: 20px; height: 20px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"><img style="width: 20px; height: 20px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M0%200h24v24H0V0z%22/%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M12.06%209.06l4-4-4-4-1.41%201.41%201.59%201.59h-.18c-2.3%200-4.6.88-6.35%202.64-3.52%203.51-3.52%209.21%200%2012.72%201.5%201.5%203.4%202.36%205.36%202.58v-2.02c-1.44-.21-2.84-.86-3.95-1.97-2.73-2.73-2.73-7.17%200-9.9%201.37-1.37%203.16-2.05%204.95-2.05h.17l-1.59%201.59%201.41%201.41zm8.94%203c-.19-1.74-.88-3.32-1.91-4.61l-1.43%201.43c.69.92%201.15%202%201.32%203.18H21zm-7.94%207.92V22c1.74-.19%203.32-.88%204.61-1.91l-1.43-1.43c-.91.68-2%201.15-3.18%201.32zm4.6-2.74l1.43%201.43c1.04-1.29%201.72-2.88%201.91-4.61h-2.02c-.17%201.18-.64%202.27-1.32%203.18z%22/%3E%3C/svg%3E"></button>
-                                                <div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); display: none;"></div><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; top: 0px; left: 0px; overflow: hidden; width: 40px; height: 40px;"
-                                                    draggable="false" aria-label="Tilt map" title="Tilt map" type="button" class="gm-tilt gm-control-active"><img style="width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"><img style="width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"><img style="width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2016%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2016h8V9H0v7zm10%200h8V9h-8v7zM0%207h8V0H0v7zm10-7v7h8V0h-8z%22/%3E%3C/svg%3E"></button></div>
-                                        </div>
-                                        <div style="position: absolute; left: 20px; top: 0px;"></div>
-                                        <div class="gmnoprint" style="position: absolute; left: 0px; top: 32px;" data-control-width="40" data-control-height="81">
-                                            <div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"
-                                                    draggable="false" aria-label="Zoom in" title="Zoom in" type="button" class="gm-control-active"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt=""><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt=""><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt=""><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M18%207h-7V0H7v7H0v4h7v7h4v-7h7z%22/%3E%3C/svg%3E" alt=""></button>
-                                                <div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"
-                                                    draggable="false" aria-label="Zoom out" title="Zoom out" type="button" class="gm-control-active"><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt=""><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt=""><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt=""><img style="height: 18px; width: 18px;" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23d1d1d1%22%20d%3D%22M0%207h18v4H0V7z%22/%3E%3C/svg%3E" alt=""></button></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-
-                                </div>
-                                <div></div>
-                                <div>
-                                    <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 192px; bottom: 0px;">
-                                        <div draggable="false" style="user-select: none; height: 14px; line-height: 14px;" class="gm-style-cc">
-                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                                                <div style="width: 1px;"></div>
-                                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
-                                            </div>
-                                            <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: inline-block; border: 0px none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit;"
-                                                    draggable="false" aria-label="Keyboard shortcuts" title="Keyboard shortcuts" type="button">Keyboard shortcuts</button></div>
-                                        </div>
-                                    </div>
-                                    <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 71px; bottom: 0px; width: 121px;">
-                                        <div draggable="false" style="user-select: none; height: 14px; line-height: 14px;" class="gm-style-cc">
-                                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                                                <div style="width: 1px;"></div>
-                                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
-                                            </div>
-                                            <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><button style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: none; border: 0px none; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: relative; cursor: pointer; user-select: none; color: rgb(0, 0, 0); font-family: inherit; line-height: inherit;"
-                                                    draggable="false" aria-label="Map Data" title="Map Data" type="button">Map Data</button><span>Map data ©2022 Google</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="gmnoprint gm-style-cc" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;" draggable="false">
-                                        <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                                            <div style="width: 1px;"></div>
-                                            <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
-                                        </div>
-                                        <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);" href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" rel="noopener">Terms of Use</a></div>
-                                    </div>
-                                    <div draggable="false" style="user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;" class="gm-style-cc">
-                                        <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                                            <div style="width: 1px;"></div>
-                                            <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
-                                        </div>
-                                        <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" dir="ltr" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;"
-                                                href="https://www.google.com/maps/@40.6984703,-73.9514422,7z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3">Report a map error</a></div>
-                                    </div>
-                                    <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
-                                        <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2022 Google</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div id="map" class="bg-white">
+                        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bruce%20house&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="ftco-section-parallax bg-secondary">
         <div class="parallax-img d-flex align-items-center">
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-7 text-center heading-section heading-section-white ftco-animate fadeInUp ftco-animated">
                         <h2>Subscribe to our Newsletter</h2>
-                        <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p> -->
                         <div class="row d-flex justify-content-center mt-4 mb-4">
                             <div class="col-md-8">
                                 <form action="#" class="subscribe-form">
@@ -476,30 +135,21 @@
             </div>
         </div>
     </section>
+
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Lawyers for Animal Protection in Africa<img src="images/logo.png" alt="LAPA logo" id="lapa-logo" width="90px" height="50px"></h2>
-
+                        <h2 class="ftco-heading-2">Lawyers for Animal Protection in Africa</h2>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <a href="https://twitter.com/AnimalLawAfrica">
-                                <img src="./images/social/twitter.png" alt="Twitter">
-                            </a>
-                            <a href="https://www.facebook.com/AnimalLawAfrica/?_rdc=2&_rdr">
-                                <img src="./images/social/facebook.png" alt="Facebook">
-                            </a>
-                            <a href="https://www.instagram.com/animallawafrica/">
-                                <img src="./images/social/instagram.png" alt="Instagram">
-                            </a>
-                            <a href="https://www.linkedin.com/company/lawyers-for-animal-protection-in-africa-lapa/">
-                                <img src="./images/social/linkedin.png" alt="Instagram">
-                            </a>
+                            <li><a href="https://twitter.com/AnimalLawAfrica"><img src="images/social/twitter.png" alt="Twitter"></a></li>
+                            <li><a href="https://www.facebook.com/AnimalLawAfrica"><img src="images/social/facebook.png" alt="Facebook"></a></li>
+                            <li><a href="https://www.instagram.com/animallawafrica/"><img src="images/social/instagram.png" alt="Instagram"></a></li>
+                            <li><a href="https://www.linkedin.com/company/lawyers-for-animal-protection-in-africa-lapa/"><img src="images/social/linkedin.png" alt="LinkedIn"></a></li>
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Business Hours</h2>
@@ -508,7 +158,6 @@
                             <p class="pl-3">
                                 <span>Monday – Saturday : 9 am to 8 pm</span>
                             </p>
-
                         </div>
                     </div>
                 </div>
@@ -528,17 +177,28 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p>
-                        Copyright ©
+                        Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | LAPA - Lawyers for Animal Protection in Africa 
+                        </script> All rights reserved | LAPA - Lawyers for Animal Protection in Africa
                     </p>
                 </div>
             </div>
         </div>
     </footer>
-    <div id="ftco-loader" class="fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle></svg></div>
-    <script src="js/jquery.min.js"></script>
+
+    <div id="ftco-loader" class="fullscreen">
+        <svg class="circular" width="48" height="48">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle>
+        </svg>
+    </div>
+
+    <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p>Message sent successfully</p>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -546,42 +206,26 @@
             $('.dropdown-toggle').click(function() {
                 window.location.href = $(this).attr('href');
             });
-    
+
             $('.dropdown').hover(function() {
                 $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
             }, function() {
                 $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
             });
+
+            $('#contactForm').on('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                showPopup();
+            });
         });
-    </script>
-    <script src="js/jquery-migrate-3.0.1.min.js+popper.min.js+bootstrap.min.js.pagespeed.jc.KqYNhT0CZi.js"></script>
 
-    <script src="js/jquery.easing.1.3.js+jquery.waypoints.min.js+jquery.stellar.min.js+owl.carousel.min.js.pagespeed.jc.WkbtNwmmcm.js"></script>
-
-    <script src="js/jquery.magnific-popup.min.js+aos.js+jquery.animateNumber.min.js+bootstrap-datepicker.js.pagespeed.jc.-CouTH_-cP.js"></script>
-
-    <script src="js/jquery.timepicker.min.js"></script>
-    <script src="js/scrollax.min.js+google-map.js+main.js.pagespeed.jc.Z5_M5DxseN.js"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
+        function showPopup() {
+            document.getElementById('popup').classList.add('show');
         }
-        gtag('js', new Date());
 
-        gtag('config', 'UA-23581568-13');
+        function closePopup() {
+            document.getElementById('popup').classList.remove('show');
+        }
     </script>
-    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6cccf0dc3d331b5f&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}"
-        crossorigin="anonymous"></script>
-
 </body>
-
 </html>
