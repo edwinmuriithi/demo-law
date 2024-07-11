@@ -7154,7 +7154,27 @@ textarea.form-control {
     font-weight: bold; /* Make the text bold */
 }
 
+/*Our Approach Section CSS*/
 
+.responsive-icon {
+    max-width: 140px; /* Adjust the size as needed */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .responsive-icon {
+        max-width: 60px; /* Adjust the size for medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-icon {
+        max-width: 40px; /* Adjust the size for small screens */
+    }
+}
+
+
+/* Current Projects Section CSS*/
 .section-title-projects {
     text-align: center;
     font-size: 2.5rem; /* Adjust font size as needed */
@@ -7162,72 +7182,83 @@ textarea.form-control {
     color: #000000; /* Optional: Change color as desired */
     margin-bottom: 20px; /* Optional: Adjust spacing */
 }
+
+
+.projects {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+
+.image-container {
+    max-width: 140px;
+    margin-bottom: 15px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h5 {
+    margin: 15px 0;
+    font-size: 1.25em;
+}
+
+.card p {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .responsive-project-image {
+        max-width: 90%;
+    }
+    .column {
+        flex: 1 0 100%; /* Make columns full width on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-project-image {
+        max-width: 80%;
+    }
+}
+
+
+/* Partners Section CSS */
 .section-title-partners {
     text-align: center;
     font-size: 2.5rem; /* Adjust font size as needed */
     font-weight: bold;
     color: #000000; /* Optional: Change color as desired */
     margin-bottom: 20px; /* Optional: Adjust spacing */
-}
-
-.section-title-get-involved {
-    text-align: center;
-    font-size: 2.5rem; /* Adjust font size as needed */
-    font-weight: bold;
-    color: #000000; /* Optional: Change color as desired */
-    margin-bottom: 20px; /* Optional: Adjust spacing */
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-}
-@media (max-width: 768px) {
-    .column {
-        flex: 0 0 100%; /* Make each column take full width */
-        max-width: 100%;
-    }
-}
-
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    height: 100%;
-}
-
-.image-container {
-    width: 100%;
-    height: auto; /* Fixed height for uniformity */
-    overflow: hidden;
-}
-
-.image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the entire container */
-}
-
-.card h3 {
-    margin-top: 20px;
-}
-.card h5 {
-    margin-top: 20px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.card p {
-    flex-grow: 1;
 }
 
 .partners-row {
@@ -7241,11 +7272,22 @@ textarea.form-control {
     flex: 0 1 20%; /* Adjust this value based on the number of logos and desired layout */
     max-width: 150px;
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-logo {
+    width: 100%;
+    height: 100px; /* Set a fixed height for all logos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .partner-logo img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
@@ -7254,6 +7296,10 @@ textarea.form-control {
         flex: 0 1 25%;
         max-width: 120px;
     }
+
+    .partner-logo {
+        height: 80px; /* Adjust height for medium screens */
+    }
 }
 
 @media (max-width: 992px) {
@@ -7261,12 +7307,20 @@ textarea.form-control {
         flex: 0 1 33%;
         max-width: 100px;
     }
+
+    .partner-logo {
+        height: 70px; /* Adjust height for smaller screens */
+    }
 }
 
 @media (max-width: 768px) {
     .partner-column {
         flex: 0 1 50%;
         max-width: 80px;
+    }
+
+    .partner-logo {
+        height: 60px; /* Adjust height for smaller screens */
     }
 }
 
@@ -7276,9 +7330,14 @@ textarea.form-control {
         max-width: 60px;
     }
 
+    .partner-logo {
+        height: 50px; /* Adjust height for smallest screens */
+    }
+
     .card {
         padding: 10px;
     }
+
 
     .section-title-projects,
     .section-title-get-involved,
@@ -7290,6 +7349,55 @@ textarea.form-control {
         padding: 5px;
     }
 }
+
+/*Get Involved Section Css*/
+.section-title-get-involved {
+    text-align: center;
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #000000; /* Optional: Change color as desired */
+    margin-bottom: 20px; /* Optional: Adjust spacing */
+}
+
+
+.responsive-project-image {
+    max-width: 140px;
+    height: auto;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .responsive-project-image {
+        max-width: 90%;
+    }
+    .column {
+        flex: 1 0 100%; /* Make columns full width on small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-project-image {
+        max-width: 80%;
+    }
+}
+
 
 .testimony-section .owl-dots .owl-dot.active,
 .testimony-section .owl-dots .owl-dot:focus {
