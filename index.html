@@ -8,99 +8,379 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/test1.css">
     <link rel="stylesheet" href="css/test2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css+animate.css+owl.carousel.min.css+owl.theme.default.min.css+magnific-popup.css+aos.css+ionicons.min.css+bootstrap-datepicker.css+jquery.timepicker.css+flaticon.css+icomoon.css+style.css.pagespeed.cc.hfzlshqC8B.css">
+    <link rel="stylesheet"
+        href="css/open-iconic-bootstrap.min.css+animate.css+owl.carousel.min.css+owl.theme.default.min.css+magnific-popup.css+aos.css+ionicons.min.css+bootstrap-datepicker.css+jquery.timepicker.css+flaticon.css+icomoon.css+style.css.pagespeed.cc.hfzlshqC8B.css">
     <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script defer="" src="/cdn-cgi/zaraz/s.js?executed=&amp;c=_ga%3DGA1.2.1714085685.1641996057%3B+_gid%3DGA1.2.732648696.1641996057&amp;t=Whisper+-+Free+Bootstrap+4+Template+by+Colorlib&amp;w=1920&amp;h=1080&amp;j=968&amp;e=1848&amp;l=https%3A%2F%2Fpreview.colorlib.com%2Ftheme%2Fwhisper%2F&amp;r=&amp;k=24&amp;n=UTF-8&amp;o=-180"></script>
+    <script defer=""
+        src="/cdn-cgi/zaraz/s.js?executed=&amp;c=_ga%3DGA1.2.1714085685.1641996057%3B+_gid%3DGA1.2.732648696.1641996057&amp;t=Whisper+-+Free+Bootstrap+4+Template+by+Colorlib&amp;w=1920&amp;h=1080&amp;j=968&amp;e=1848&amp;l=https%3A%2F%2Fpreview.colorlib.com%2Ftheme%2Fwhisper%2F&amp;r=&amp;k=24&amp;n=UTF-8&amp;o=-180"></script>
     <script type="text/javascript" src="js/javascript.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/common.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/util.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="https://maps.googleapis.com/maps-api-v3/api/js/47/5/util.js"></script>
 </head>
 
 <body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img href="index.html" src="images/logo.png" alt="LAPA logo" id="lapa-logo" width="150px" height="92px"></a>
+            <a class="navbar-brand" href="index.html"><img href="index.html" src="images/logo.png" alt="LAPA logo"
+                    id="lapa-logo" width="150px" height="92px"></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="fas fa-bars"></span> Menu
-     </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span> Menu
+            </button>
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="ourwork.html" class="nav-link">Our Work</a></li>
-                    <li class="nav-item"><a href="who-we-are.html" class="nav-link">Our Team</a></li>
+                    
+                    <!-- <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="aboutus.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="ourcause.html">Our Cause</a></li>
+                            <li><a class="dropdown-item" href="ourpartners.html">Our Partners</a></li>
+                            <li><a class="dropdown-item" href="work-with-us.html">Work with Us</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- <li class="nav-item"><a href="ourwork.html" class="nav-link">Our Work</a></li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="aboutus.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="habitats.html">Habitats and Ecosystem</a></li>
+                            <li><a class="dropdown-item" href="wildlife.html">Wildlife Conservation & Management</a></li>
+                            <li><a class="dropdown-item" href="farm-animals.html">Farmed Animals</a></li>
+                            <li><a class="dropdown-item" href="consultancy.html">Consultancy & Research</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- <li class="nav-item"><a href="who-we-are.html" class="nav-link">Our Team</a></li> -->
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="hero-wrap js-fullheight" style="background-image: url(images/lion1.jpg); height: 628px; background-position: 70% 0%;" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap js-fullheight"
+        style="background-image: url(images/bglapa.jpg); height: 628px; background-position: 70% 0%;"
+        data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true" style="height: 428px;">
-                <div class="col-md-10 text-center ftco-animate fadeInUp ftco-animated" data-scrollax=" properties: { translateY: '70%' }" style="transform: translateZ(0px) translateY(0%);">
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+                data-scrollax-parent="true" style="height: 428px;">
+                <div class="col-md-10 text-center ftco-animate fadeInUp ftco-animated"
+                    data-scrollax=" properties: { translateY: '70%' }"
+                    style="transform: translateZ(0px) translateY(0%);">
                     <br/>
                     <br/>
                     <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    
+                    
 
 
-                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="opacity: 1; transform: translateZ(0px) translateY(0%);">
-
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
+                        style="opacity: 1; transform: translateZ(0px) translateY(0%);">
+                        Law. Science. Action.
                     </h1>
+                    <h2 class="section-landing">Securing Species and the Environment.</h2>
 
                 </div>
             </div>
         </div>
     </div>
+    
+    <section class="ftco-gallery">
+        <div class="container-wrap">
+            <!--About Section-->
+            <div class="bg-white py-5">
+                <div class="container py-5">
+            
+                    <div class="row align-items-center mb-5">
+                        <div class="col-lg-6 order-2 order-lg-1">
+                            <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                            <!-- <h2 class="font-weight-light">Our Vision</h2> -->
+                            <p class="main-paragraph">
+                                We believe the Law should work to secure species and the environment. We work in the courts, with communities and policy makers to transform, strengthen and enhance the law to secure and protect the environment and animal species.
+                            </p>
+                        </div>
+                        <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2">
+                            <!-- <img src="" alt="“Law Should Work”" class="img-fluid mb-4 mb-lg-0"> -->
+                            <p class="quote-paragraph">
+                                “Law Should Work”
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 px-5 mx-auto">
+                            <!-- <img src="" alt="“One Health”" class="img-fluid mb-4 mb-lg-0"> -->
+                            <p class="quote-paragraph">
+                                “One Health One Welfare”
+                            </p>
+                        </div>
+                        <div class="col-lg-6"><i class=" fa-2x mb-3 text-primary"></i>
+                            <!-- <h2 class="font-weight-light">Our Mission</h2> -->
+                            <p class="main-paragraph">
+                                We apply the One Health approach that recognizes interconnectedness of human health, animal health, and the environment. We fashion solutions that embrace this intersectionality through multi-disciplinary efforts.</p>
+                        </div>
+                    </div>
+                  
+            <!--End About Section-->
+
+        </div>
+    </section>
+    <br/>
+    <br/>
+
     <section class="ftco-section ftco-no-pb services-section">
         <div class="container">
+            
+            <div class="col-12 text-center">
+                <h2 class="section-title">Our Approach</h2>
+            </div>
+                
             <div class="row no-gutters d-flex">
+                
                 <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4 fadeInUp ftco-animated">
-                    <div class="icon"><img src="images/law2.jpeg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+                    
+                    <div class="icon"><img src="images/9924525.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
                     <div class="media-body">
-                        <h3 class="heading mb-3"><a href="#">Legal Advocacy</a></h3>
-                        <p>Legal advocacy is critical in catalyzing and empowering government and communities to undertake action on their own behalf to protect non–human animals. We use strategic public interest litigation and legal advocacy to move the
-                            justiciability of non-human animal rights from theory to practice.</p>
+                        <h3 class="heading mb-3"><a href="#">Strategic Litigation</a></h3>
+                        <p>We work in the courts to protect animals and the environment and use the law to challenge interests averse to animal interests and their status.</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4 fadeInUp ftco-animated">
-                    <div class="icon"><img src="images/paw1.jpg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+                    <div class="icon"><img src="images/Advocacy.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
                     <div class="media-body">
-                        <h3 class="heading mb-3"><a href="#">Farmed Animals</a></h3>
-                        <p>LAPA utilizes law, science and policy to advocate for the reduce of exploitation of farmed animals (chicken, pigs, donkeys) in commercial farming systems and to counter the relating consumer protection, environmental pollution
-                            of CAFOs, animal welfare issues that are incidental to CAFOs.</p>
+                        <h3 class="heading mb-3"><a href="#">Policy & Advocacy</a></h3>
+                        <p>We support causes that advocate for the enhancement of the welfare and status of non–human animals, the habitats they live in and the communities that live with them. We expose, document and identify various animal rights, welfare, abuse and related concerns.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4 fadeInUp ftco-animated">
+                    <div class="icon"><img src="images/scienceresearch.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3"><a href="#">Science & Research</a></h3>
+                        <p>We conduct high-quality research to inform decisions, shape policy, and drive advocacy. Our data and insights help NGOs, governments, and the public understand root causes, evaluate program impacts, identify trends, and find solutions for communities and causes.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4 fadeInUp ftco-animated">
-                    <div class="icon"><img src="images/puma.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+                    <div class="icon"><img src="images/aidlegal.png" alt="" class="img-fluid mb-4 mb-lg-0"></div>
                     <div class="media-body">
-                        <h3 class="heading mb-3"><a href="#">Wildlife</a></h3>
-                        <p>LAPA protects endangered species by supporting legal interventions that address and strengthen law enforcement’s response to wildlife crime and illegal exploitation of wildlife.</p>
+                        <h3 class="heading mb-3"><a href="#">Legal Aid</a></h3>
+                        <p>We advise and offer legal assistance on regulatory, policy, and justice issues for nonprofits, communities and the public working with non-human animals. We support them to unlock and uphold their rights and navigate the complexities of the legal system.</p>
                     </div>
                 </div>
-                <div class="col-md-3 text-center services align-self-stretch ftco-animate p-4 fadeInUp ftco-animated">
-                    <div class="icon"><img src="images/leaf.jpeg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
-                    <div class="media-body">
-                        <h3 class="heading mb-3"><a href="#">Habitats and Ecosystems</a></h3>
-                        <p>The development, implementation and interpretation of laws relating to the protection of spaces animals live in are protected from challenges like human wildlife conflict, loss of habitats to infrastructural developments and pollution
-                            from industries.</p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="projects">
+            <h2 class="section-title-projects">Current Projects</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/waves.png" alt="Project WAVES Image">
                     </div>
+                    <h5>Project WAVES</h5>
+                    <p>Project WAVES is a campaign for the protection of marine species and their habitats. We work for community members, with policymakers and in the courts to advance the protection of endangered marine species from illegal, unreported, and unregulated fishing.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/communityaid.png" alt="CLAWS">
+                    </div>
+                    <h5>CLAWS</h5>
+                    <p>Our Community Legal Aid Workers (CLAWS) provide legal assistance to communities affected by human-wildlife conflict and promote wildlife conservation. CLAWS are trained to provide legal support, raise legal awareness, and empower communities to navigate legal processes effectively.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/wildlifepaw.png" alt="Justice for Wildlife">
+                    </div>
+                    <h5>Justice for Wildlife</h5>
+                    <p>We leverage laws and technology to disrupt criminal networks that trade in wildlife. We work with policymakers and law enforcement to strengthen their response to environmental crime.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/appEco.png" alt="EcoSyNC">
+                    </div>
+                    <h5>EcoSyNC</h5>
+                    <p>Kenya's egg market is projected to grow by 211% by 2050, but challenges in welfare, sustainability, and safety persist. The EcoSustainable Nurture Certified program, via the EcoSyNC platform, will establish a certification process promoting ethical and sustainable production. This certification will enhance market value by endorsing One Health and One Welfare principles.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="ftco-counter" id="section-counter">
-        <div class="container-fluid">
-            <div class="row d-flex">
 
-
+    <section>
+        <div class="partners">
+            <h2 class="section-title-partners">Our Partners</h2>
+        </div>
+        <div class="row partners-row">
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/usaid.png" alt="USAID">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/United for Wildlife.png" alt="United for Wildlife">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/Baraza Global.png" alt="Baraza Global">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/Animal Law Reform South Africa.png" alt="Animal Law Reform South Africa">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/CAAWO.png" alt="CAAWO">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/wita1.webp" alt="WITA">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/WildlifeDirect.png" alt="WildlifeDirect">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/Advocates for Animals.png" alt="Advocates for Animals">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/gohaa.png" alt="GOHAA">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/Brooke EA.png" alt="Brooke EA">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/Conservation Alliance of Kenya.png" alt="Conservation Alliance of Kenya">
+                </div>
+            </div>
+            <!-- <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="path/to/logo12.jpg" alt="Company 12">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="images/KWCA.png" alt="KWCA">
+                </div>
+            </div>
+            
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="path/to/logo14.jpg" alt="Company 14">
+                </div>
+            </div>
+            <div class="column partner-column">
+                <div class="partner-logo">
+                    <img src="path/to/logo15.jpg" alt="Company 15">
+                </div>
+            </div> -->
+        </div>
+    </section>
+      
+    <section>
+        <div class="get-involved">
+            <h2 class="section-title-get-involved">Get Involved</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/volunteer.png" alt="Volunteer Image">
+                    </div>
+                    <h5>Volunteer</h5>
+                    <p>Join us as a volunteer and help make a difference in our various projects and initiatives.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/donate.png" alt="Donate Image">
+                    </div>
+                    <h5>Donate</h5>
+                    <p>Support our work by making a donation. Your contribution helps us continue our mission.</p>
+                </div>
+            </div>
+    
+            <div class="column">
+                <div class="card">
+                    <div class="image-container">
+                        <img src="images/partner.png" alt="Partner Image">
+                    </div>
+                    <h5>Partner</h5>
+                    <p>Become a partner and collaborate with us on projects that promote sustainability and conservation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="ftco-section-parallax bg-secondary">
+        <div class="parallax-img d-flex align-items-center">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate fadeInUp ftco-animated">
+                        <h2>Subscribe to our Newsletter</h2>
+                        <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p> -->
+                        <div class="row d-flex justify-content-center mt-4 mb-4">
+                            <div class="col-md-8">
+                                <form action="#" class="subscribe-form">
+                                    <div class="form-group d-flex">
+                                        <input type="text" class="form-control" placeholder="Enter email address">
+                                        <input type="submit" value="Subscribe" class="submit px-3">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -110,7 +390,8 @@
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Lawyers for Animal Protection in Africa<img src="images/logo.png" alt="LAPA logo" id="lapa-logo" width="90px" height="50px"></h2>
+                        <h2 class="ftco-heading-2">Lawyers for Animal Protection in Africa<img src="images/logo.png"
+                                alt="LAPA logo" id="lapa-logo" width="90px" height="50px"></h2>
 
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                             <a href="https://twitter.com/AnimalLawAfrica">
@@ -146,9 +427,12 @@
                         <h2 class="ftco-heading-2">Contact Us</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li class="mb-2"><a href="#"><i class="fas fa-map-marker-alt mr-2"></i><span class="text">Nairobi, Kenya</span></a></li>
-                                <li class="mb-2"><a href="#"><i class="fas fa-phone mr-2"></i><span class="text">+254729590600</span></a></li>
-                                <li class="mb-2"><a href="#"><i class="far fa-envelope mr-2"></i><span class="text">info@lapa.africa</span></a></li>
+                                <li class="mb-2"><a href="#"><i class="fas fa-map-marker-alt mr-2"></i><span
+                                            class="text">Nairobi, Kenya</span></a></li>
+                                <li class="mb-2"><a href="#"><i class="fas fa-phone mr-2"></i><span
+                                            class="text">+254716152699</span></a></li>
+                                <li class="mb-2"><a href="#"><i class="far fa-envelope mr-2"></i><span
+                                            class="text">info@lapa.africa</span></a></li>
 
 
                             </ul>
@@ -162,7 +446,7 @@
                         Copyright ©
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | LAPA - Lawyers for Animal Protection in Africa 
+                        </script> All rights reserved | LAPA - Lawyers for Animal Protection in Africa
 
                     </p>
                 </div>
@@ -171,8 +455,28 @@
     </footer>
 
 
-    <div id="ftco-loader" class="fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"></circle></svg></div>
+    <div id="ftco-loader" class="fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"></circle>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"></circle>
+        </svg></div>
     <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle').click(function() {
+                window.location.href = $(this).attr('href');
+            });
+    
+            $('.dropdown').hover(function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+            }, function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+            });
+        });
+    </script>
+
     <script src="js/jquery-migrate-3.0.1.min.js+popper.min.js+bootstrap.min.js.pagespeed.jc.KqYNhT0CZi.js"></script>
     <script>
         eval(mod_pagespeed_XTY88Qrt20);
@@ -180,20 +484,27 @@
     <script>
         eval(mod_pagespeed_yaHs8Fgu_W);
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script src="js/jquery.magnific-popup.min.js+aos.js+jquery.animateNumber.min.js+bootstrap-datepicker.js.pagespeed.jc.-CouTH_-cP.js"></script>
+    <script
+        src="js/jquery.magnific-popup.min.js+aos.js+jquery.animateNumber.min.js+bootstrap-datepicker.js.pagespeed.jc.-CouTH_-cP.js"></script>
 
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js+google-map.js+main.js.pagespeed.jc.Z5_M5DxseN.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
 
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 
-    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon="{&quot;rayId&quot;:&quot;6ccbcb87bfe01b5a&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}"
+    <script defer=""
+        src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+        data-cf-beacon="{&quot;rayId&quot;:&quot;6ccbcb87bfe01b5a&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2021.12.0&quot;,&quot;si&quot;:100}"
         crossorigin="anonymous"></script>
 
 </body>
