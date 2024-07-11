@@ -7158,18 +7158,23 @@ textarea.form-control {
 
 .responsive-icon {
     max-width: 140px; /* Adjust the size as needed */
-    height: auto;
+    height: 140px;
+    border-radius: 50%; /* Makes the icon circular */
 }
 
 @media (max-width: 768px) {
     .responsive-icon {
         max-width: 60px; /* Adjust the size for medium screens */
+        height: 60px;
+        border-radius: 50%; /* Keeps the icon circular */
     }
 }
 
 @media (max-width: 576px) {
     .responsive-icon {
         max-width: 40px; /* Adjust the size for small screens */
+        height: 40px;
+        border-radius: 50%; /* Keeps the icon circular */
     }
 }
 
@@ -7182,7 +7187,6 @@ textarea.form-control {
     color: #000000; /* Optional: Change color as desired */
     margin-bottom: 20px; /* Optional: Adjust spacing */
 }
-
 
 .projects {
     text-align: center;
@@ -7217,13 +7221,15 @@ textarea.form-control {
 }
 
 .image-container {
-    max-width: 140px;
+    width: 140px; /* Fixed width */
+    height: 140px; /* Fixed height */
     margin-bottom: 15px;
 }
 
 .image-container img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the container while maintaining aspect ratio */
     border-radius: 8px;
 }
 
@@ -7250,7 +7256,6 @@ textarea.form-control {
         max-width: 80%;
     }
 }
-
 
 /* Partners Section CSS */
 .section-title-partners {
