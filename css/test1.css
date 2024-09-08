@@ -7114,6 +7114,141 @@ textarea.form-control {
     background: rgba(0, 0, 0, 0.1);
 }
 
+/* About Us Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.company-culture {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4e4e4e;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.mission {
+    background-color: #eac15a; /* Light color */
+}
+
+.vision {
+    background-color: #a17912; /* Medium color */
+}
+
+.values {
+    background-color: #eac15a; /* Dark color */
+}
+
+
+.text-content h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.text-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-content img {
+    max-width: 300px; /* You can adjust the size based on your need */
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .sections {
+        flex-direction: row;
+    }
+}
+
+/* Medium devices (tablets, 768px to 1200px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .sections {
+        flex-direction: column;
+    }
+
+    .image-content img {
+        max-width: 80px;
+    }
+}
+
+/* Small devices (mobiles, less than 768px) */
+@media (max-width: 767px) {
+    .sections {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .section {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .image-content img {
+        max-width: 60px;
+    }
+}
+
+
 
 
 .section-landing {
