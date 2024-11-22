@@ -7114,6 +7114,11 @@ textarea.form-control {
     background: rgba(0, 0, 0, 0.1);
 }
 
+/* Project WAVES Styling */
+.centered-text {
+    text-align: center;
+}
+
 /* About Us Styling */
 * {
     margin: 0;
