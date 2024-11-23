@@ -7397,6 +7397,90 @@ body {
     }
 }
 
+
+/*Waves Sections CSS*/
+/* Ensure equal dimensions for images */
+.waves-image-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waves-responsive-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the container without distortion */
+}
+
+/* Card layout adjustments */
+/* Ensure the cards are the same height */
+.waves-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.waves-column {
+    flex: 1 1 calc(33.333% - 20px); /* Responsive, adjusts to 3 columns */
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.waves-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    height: 100%; /* Ensures uniform height */
+}
+
+
+.waves-image-container {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the image container */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waves-responsive-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    object-position: center; /* Centers the image within the container */
+}
+
+
+.waves-card-content {
+    flex-grow: 1; /* Fills remaining space */
+}
+
+.waves-card-content h5 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+}
+
+.waves-card-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+
 /* Partners Section CSS */
 .section-title-partners {
     text-align: center;
